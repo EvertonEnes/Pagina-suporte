@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="tela">
+      <h1 class="text-h1">Contate-nos</h1>
+      <div class="informacoes">
+        <div class="container-nomes">
+          <label>Nome <span class="asterisco">*</span><input type="text" class="input-nome inputs limpar"><span class="erro-field"></span></label>
+          <label>Sobrenome <span class="asterisco">*</span><input type="text" class="input-sobrenome inputs limpar"><span class="erro-field"></span></label>
+        </div>
+        <div class="container-email">
+          <label>Email<span class="asterisco">*</span><input type="email" class="input-email limpar"><span class="erro-field"></span></label>
+        </div>
+        <div class="container-number">
+          <label>Número <span class="asterisco">*</span><input type="text" class="input-numero limpar"><span class="erro-field"></span></label>
+          <label>CPF <span class="asterisco">*</span><input type="text" class="input-cpf limpar"><span class="erro-field"></span></label>
+        </div>
+        <p class="type-consult">Tipo de consulta <span class="asterisco">*</span></p>
+        <div class="container-check">
+          <label class="caixa-radio"><input type="radio" name="option" class="input-radio"> Inquérito geral</label>
+          <label class="caixa-radio"><input type="radio" name="option" class="input-radio"> Solicitação de suporte</label>
+        </div>
+        <span class="erro-field"></span>
+        <div class="container-message">
+          <label>Messagem <span class="asterisco">*</span><textarea name="" cols="30" rows="10" maxlength="500" class="text-area"></textarea><span class="erro-field"></span></label>
+        </div>
+
+        <div class="container-regras">
+          <label><input type="checkbox" class="input-confirm"> Autorizo ​​ser contatado pela equipe</label>
+          <span class="erro-field"></span>
+        </div>
+
+        <input class="btn-submit" type="button" value="Enviar">
+
+        <div class="success-message">Obrigado por preencher o formulário. Entraremos em contato em breve!</div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>

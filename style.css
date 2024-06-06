@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+}
+
+main{
+    background: rgb(224 241 231);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgb(64, 67, 70);
+}
+
+.tela{
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.asterisco{
+    color: rgb(23, 101, 247);
+}
+
+.container-nomes{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1.2rem;
+}
+
+.container-nomes label{
+    width: 100%;
+}
+
+.inputs{
+    width: 90%;
+    height: 1.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    padding: 1rem;
+}
+
+.inputs:hover{
+    border: solid 1px #4f786e;
+}
+
+.tela label, p{
+    font-size: 1.2rem;
+}
+
+.container-email{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-email{
+    width: 95%;
+    height: 1.5rem;
+    border-radius: 0.7rem;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    padding: 1rem;
+}
+
+.container-number{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.container-number label{
+    width: 100%;
+}
+
+.input-numero, .input-cpf{
+    width: 90%;
+    border-radius: 0.7rem;
+    border: solid 1px #ccc;
+    margin-top: 0.8rem;
+    padding: 1rem;
+}
+
+.type-consult{
+    margin-top: 10px;
+}
+
+.container-check{
+    display: flex;
+    margin-top: 1rem;
+    gap: 1.2rem;
+}   
+
+.caixa-radio{
+    cursor: pointer;
+    width: 50%;
+    border: solid 1px #ccc;
+    border-radius: 0.7rem;
+    height: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container-message{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.text-area{
+    width: 95%;
+    height: 6.5rem;
+    margin-top: 1rem;
+    resize: none;
+    border-radius: 0.7rem;
+    border: solid 1px #ccc;
+    padding: 1rem;
+}
+
+.text-area:hover{
+    border: solid 1px #4f786e;
+}
+
+.container-regras{
+    margin-top: 2.5rem;
+}
+.container-regras label{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.text-area:hover, .inputs:hover, .input-cpf:hover, .input-numero:hover, .input-email:hover{
+    border: solid 1px #4f786e;
+}
+
+.btn-submit{
+    margin-top: 3rem;
+    width: 100%;
+    background: rgba(12, 125, 105, 1);
+    border-radius: 0.7rem;
+    border: none;
+    height: 4rem;
+    color: white;
+    cursor: pointer;
+}
+.btn-submit:hover{
+    background: rgba(6, 63, 54, 1);
+}
+
+.success-message {
+    display: none;
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.erro-field {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px; /* Adiciona uma margem superior */
+    display: block; /* Garante que a margem seja aplicada */
+}
+
+@media (max-width:605px){
+    main{
+        height: 105vh;
+    }
+    
+    .tela{
+        width: 40rem;
+    }
+}
+
+@media (max-width: 414px){
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    main{
+        height: 150vh;
+    }
+    
+    .tela{
+        width: 25rem;
+        margin-top: 50px;
+    }
+
+    .container-nomes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-nome, .input-sobrenome{
+        width: 91%;
+    }
+
+    .container-number{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-numero, .input-cpf{
+        width: 91%;
+    }
+
+    .container-check{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-check label{
+        width: 91%;
+    }
+
+    .input-email{
+        width: 91%;
+    }
+
+    .container-message textarea{
+        width: 91%;
+    }
+
+    .btn-submit{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:330px){
+    main{
+        height: 160vh;
+    }
+
+    .tela{
+        width: 18rem;
+    }
+}
